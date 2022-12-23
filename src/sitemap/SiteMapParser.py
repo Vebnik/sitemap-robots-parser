@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 from src.tools.HttpClient import HttpClient
 from src.models.Location import Location
 
+
 class SiteMapParser:
 
   http: HttpClient
@@ -39,4 +40,3 @@ class SiteMapParser:
       'unavailable': location_store_unavailable,
     }
     
-
