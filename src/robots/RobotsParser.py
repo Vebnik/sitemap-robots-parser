@@ -5,17 +5,7 @@ import re
 # module
 from src.tools.HttpClient import HttpClient
 from src.tools.Config import Config
-
-
-class Location:
-  __slots__ = ('url', 'ok')
-
-  def __init__(self, url: str, ok: bool) -> None:
-    self.url = url; self.ok = ok
-
-  def __repr__(self) -> str:
-    return f'{self.url} -> {self.ok}'
-
+from src.models.Location import Location
 
 class RobotsParser:
   http: HttpClient
